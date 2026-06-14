@@ -1,0 +1,15 @@
+name = "pip-player-worker"
+main = "pip-player-worker.js"
+compatibility_date = "2026-01-01"
+
+# --- Required: KV namespace for settings/PIN storage ---
+# Create one with:  npx wrangler kv namespace create PIP_KV
+# then paste the returned id below.
+[[kv_namespaces]]
+binding = "PIP_KV"
+id = "YOUR_KV_NAMESPACE_ID"
+
+# --- Optional: bind your own domain ---
+# [[routes]]
+# pattern = "pip.example.com/*"
+# zone_name = "example.com"
